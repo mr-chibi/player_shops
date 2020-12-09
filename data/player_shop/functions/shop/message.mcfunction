@@ -1,0 +1,1 @@
+title @s actionbar [{"text": "Welcome to ", "color": "yellow"}, {"selector": "@e[type=villager,tag=player_shop,sort=nearest,limit=1]", "color": "green"}, {"text": "'s Shop!", "color": "green"}]

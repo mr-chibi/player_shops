@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:villager,tag=player_shop,distance=0..5] at @s if score @s ps_slot_0 matches 1.. run data modify block ~ ~-1 ~ Items[{Slot:0b}] merge from entity @s Offers.Recipes[0].tag.ps_inventory[0]
