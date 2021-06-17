@@ -2,6 +2,9 @@
 scoreboard objectives add ps_create trigger
 scoreboard objectives add ps_remove trigger
 
+# Setup Chest Detection:
+scoreboard objectives add shop_chests dummy
+
 # Setup Varibles:
 scoreboard objectives add ps_id dummy
 scoreboard objectives add ps_owner dummy

@@ -6,6 +6,9 @@ scoreboard objectives remove ps_remove
 scoreboard objectives remove ps_id
 scoreboard objectives remove ps_owner
 
+# Setup Chest Detection:
+scoreboard objectives remove shop_chests
+
 # Remove Slots:
 scoreboard objectives remove ps_slot_0
 scoreboard objectives remove ps_slot_1

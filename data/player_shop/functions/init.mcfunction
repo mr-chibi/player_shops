@@ -26,11 +26,17 @@ execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,di
 # Display Shop Name:
 execute as @a at @s if entity @e[type=minecraft:villager,tag=player_shop,distance=0..5] run function player_shop:shop/message
 
+
+# Gamemode Functionallity:
+function player_shop:security/gamemode
+
+
 # Display GUI for shop Owners:
 execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,distance=0..2] at @s if score @p ps_owner = @s ps_id run data modify block ~ ~-1 ~ Lock set value ""
 execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,distance=0..2] at @s if score @p ps_owner = @s ps_id run data modify block ~ ~-2 ~ Lock set value ""
 execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,distance=0..5] at @s unless score @p ps_owner = @s ps_id run data modify block ~ ~-1 ~ Lock set value "ps_key"
 execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,distance=0..5] at @s unless score @p ps_owner = @s ps_id run data modify block ~ ~-2 ~ Lock set value "ps_key"
+
 
 # Reset Scoreboards:
 execute as @a at @s[scores={ps_trade_success=1..}] run scoreboard players set @s ps_trade_success 0
