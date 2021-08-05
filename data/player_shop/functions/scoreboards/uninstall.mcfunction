@@ -1,6 +1,8 @@
 # Remove Commands:
 scoreboard objectives remove ps_create
 scoreboard objectives remove ps_remove
+scoreboard objectives remove ps_icon
+scoreboard objectives remove ps_type
 
 # Remove Variables:
 scoreboard objectives remove ps_id
@@ -13,12 +15,6 @@ scoreboard objectives remove shop_chests
 scoreboard objectives remove ps_slot_0
 scoreboard objectives remove ps_slot_1
 scoreboard objectives remove ps_slot_2
-scoreboard objectives remove ps_slot_3
-scoreboard objectives remove ps_slot_4
-scoreboard objectives remove ps_slot_5
-scoreboard objectives remove ps_slot_6
-scoreboard objectives remove ps_slot_7
-scoreboard objectives remove ps_slot_8
 
 # Remove GUI:
 scoreboard objectives remove ps_gui
