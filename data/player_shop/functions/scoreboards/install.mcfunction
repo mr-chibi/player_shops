@@ -2,6 +2,7 @@
 scoreboard objectives add ps_create trigger
 scoreboard objectives add ps_remove trigger
 scoreboard objectives add ps_icon trigger
+scoreboard objectives add ps_job trigger
 scoreboard objectives add ps_type trigger
 
 

@@ -2,6 +2,7 @@
 scoreboard objectives remove ps_create
 scoreboard objectives remove ps_remove
 scoreboard objectives remove ps_icon
+scoreboard objectives remove ps_job
 scoreboard objectives remove ps_type
 
 # Remove Variables:
