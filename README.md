@@ -10,8 +10,18 @@
 <li>Player's can access the villager to trade and purchase player goods.</li>
 <li>If Player, doesn't own shop they can't access chest GUI & Balance.</li>
 <li>Player's Selling or Buying Items</li>
-<li>Limited 1 trade per Item. (Example 1 stack items for 5 diamonds) You'll have to restock once purchased by player.</li>
+<li>Limited 7 Stacks per Trade!</li>
 <li>Shops are linked to Player's UUID and cannot be removed from other players.</li>
+</ul>
+
+<h2>How it works:</h2>
+<ul>
+<li>Step 1: /trigger ps_create</li>
+<li>Step 2: Right click chest villager is standing on</li>
+<li>Step 3: [First Slot, (Buy)] [Second Slot, (Buy 2)] [Third Slot (Sell)]</li>
+<li>Step 4: Trade villager</li>
+<li>Step 5: Second chest under villager is where Items / money end up.</li>
+<li>Step 6: /trigger ps_remove (If you don't want shop anymore it will remove it!)</li>
 </ul>
 
 <h2>How it was written in:</h2>
