@@ -1,0 +1,4 @@
+execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,distance=0..2] at @s if score @p ps_owner = @s ps_id run data modify block ~ ~-1 ~ Lock set value ""
+execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,distance=0..2] at @s if score @p ps_owner = @s ps_id run data modify block ~ ~-2 ~ Lock set value ""
+execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,distance=0..5] at @s unless score @p ps_owner = @s ps_id run data modify block ~ ~-1 ~ Lock set value "ps_key"
+execute as @a at @s run execute as @e[type=minecraft:villager,tag=player_shop,distance=0..5] at @s unless score @p ps_owner = @s ps_id run data modify block ~ ~-2 ~ Lock set value "ps_key"

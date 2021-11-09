@@ -36,7 +36,7 @@ execute as @e[type=minecraft:villager,tag=player_shop,distance=0..2] at @s store
 execute as @e[type=minecraft:villager,tag=player_shop,distance=0..2] at @s store result score @s ps_id run scoreboard players operation @s ps_id = @p ps_owner
 
 #
-execute as @e[type=minecraft:villager,tag=player_shop,distance=0..2] at @s run data modify entity @s HandItems[0] set value {id:"minecraft:knowledge_book", Count:1b, tag:{ps_inventory:[{}, {}, {}]}}
+execute as @e[type=minecraft:villager,tag=player_shop,distance=0..2] at @s run data modify entity @s HandItems[0] set value {id:"minecraft:knowledge_book", Count:1b, tag:{ps_inventory:[{}, {}, {}], ps_sell:[{}, {}, {}]}}
 
 # Reset Command:
 scoreboard players set @s[scores={ps_create=1..}] ps_create 0

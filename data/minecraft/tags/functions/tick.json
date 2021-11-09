@@ -1,5 +1,6 @@
 {
 	"values": [
-		"player_shop:init"
+		"player_shop:init",
+		"admin_shop:init"
 	]
 }

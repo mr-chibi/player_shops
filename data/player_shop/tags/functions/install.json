@@ -1,5 +1,6 @@
 {
 	"values": [
-		"player_shop:scoreboards/install"
+		"player_shop:scoreboards/install",
+		"admin_shop:scoreboards/install"
 	]
 }

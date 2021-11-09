@@ -17,5 +17,8 @@ execute facing entity @e[type=minecraft:villager,tag=player_shop,limit=1] eyes r
 execute facing entity @e[type=minecraft:villager,tag=player_shop,limit=1] eyes run execute as @e[type=minecraft:villager,tag=player_shop,limit=1,sort=nearest] at @s if score @p[scores={ps_type=6}] ps_owner = @s ps_id run data modify entity @s VillagerData.type set value taiga
 execute facing entity @e[type=minecraft:villager,tag=player_shop,limit=1] eyes run execute as @e[type=minecraft:villager,tag=player_shop,limit=1,sort=nearest] at @s if score @p[scores={ps_type=6}] ps_owner = @s ps_id run tellraw @p [{"text": "Succesfully Villager Skin to Taiga!", "color": "green"}]
 
+execute facing entity @e[type=minecraft:villager,tag=player_shop,limit=1] eyes run execute as @e[type=minecraft:villager,tag=player_shop,limit=1,sort=nearest] at @s if score @p[scores={ps_type=7}] ps_owner = @s ps_id run data modify entity @s VillagerData.type set value snow
+execute facing entity @e[type=minecraft:villager,tag=player_shop,limit=1] eyes run execute as @e[type=minecraft:villager,tag=player_shop,limit=1,sort=nearest] at @s if score @p[scores={ps_type=7}] ps_owner = @s ps_id run tellraw @p [{"text": "Succesfully Villager Skin to Snow!", "color": "green"}]
+
 # Reset Command:
 scoreboard players set @s ps_type 0
