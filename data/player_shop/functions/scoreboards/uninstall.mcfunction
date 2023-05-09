@@ -1,38 +1,69 @@
-# Create Commands:
-scoreboard objectives remove ps_create 
-scoreboard objectives remove ps_remove 
-scoreboard objectives remove ps_icon 
-scoreboard objectives remove ps_job 
-scoreboard objectives remove ps_type 
-scoreboard objectives remove ps_help 
+# UUID's:
+scoreboard objectives remove ps_id
 
-# Buy Slots
-scoreboard objectives remove ps_buy_0 
-scoreboard objectives remove ps_buy_1 
-scoreboard objectives remove ps_buy_2 
+# Shop Player Distance
+scoreboard objectives remove ps_distance
 
-# Sell Slots
-scoreboard objectives remove ps_sell_0 
-scoreboard objectives remove ps_sell_1 
-scoreboard objectives remove ps_sell_2 
+# Player "Right Clicks" Chest:
+scoreboard objectives remove ps_chest_rclick
 
-# buying_slot Slots
-scoreboard objectives remove ps_buying_0 
-scoreboard objectives remove ps_buying_1 
-scoreboard objectives remove ps_buying_2 
+# Shop Player View Page:
+scoreboard objectives remove ps_view_pg
 
-# Setup Chest Detection:
-scoreboard objectives remove shop_chests 
+# Shop Player Error Detection when shopping:
+scoreboard objectives remove ps_error
 
-# Setup Varibles:
-scoreboard objectives remove ps_id 
-scoreboard objectives remove ps_owner 
+# Shop Chest Stock [Buying Counts]:
+scoreboard objectives remove ps_stock
 
-# Setup Shop Slots:
-scoreboard objectives remove ps_slot_0 
-scoreboard objectives remove ps_slot_1 
-scoreboard objectives remove ps_slot_2 
+# Shop <Amount> Remainer Player's shop has:
+scoreboard objectives remove ps_stock_remainer_1
+scoreboard objectives remove ps_stock_remainer_2
+scoreboard objectives remove ps_stock_remainer_3
+scoreboard objectives remove ps_stock_remainer_4
+scoreboard objectives remove ps_stock_remainer_5
+scoreboard objectives remove ps_stock_remainer_6
+scoreboard objectives remove ps_stock_remainer_7
+scoreboard objectives remove ps_stock_remainer_8
+scoreboard objectives remove ps_stock_remainer_9
 
-# Text GUI:
-scoreboard objectives remove ps_gui
-scoreboard objectives remove ps_trade_success
+# Shop <Amount> Player's Buying [Player Count Buying]:
+scoreboard objectives remove ps_cart
+
+# Shop Player's Inventory [Player's Inventory]:
+scoreboard objectives remove ps_wallet
+
+# Shop recieved from player purchasing:
+scoreboard objectives remove ps_sending
+scoreboard objectives remove ps_recieved
+
+# Shop Payment Slots:
+scoreboard objectives remove ps_payment_1
+scoreboard objectives remove ps_payment_2
+scoreboard objectives remove ps_payment_3
+scoreboard objectives remove ps_payment_4
+scoreboard objectives remove ps_payment_5
+scoreboard objectives remove ps_payment_6
+scoreboard objectives remove ps_payment_7
+scoreboard objectives remove ps_payment_8
+scoreboard objectives remove ps_payment_9
+
+# Shop Commands:
+scoreboard objectives remove ps_help
+scoreboard objectives remove ps_create
+scoreboard objectives remove ps_page
+scoreboard objectives remove ps_buy
+scoreboard objectives remove ps_edit
+scoreboard objectives remove ps_particles
+scoreboard objectives remove ps_lock
+scoreboard objectives remove ps_unlock
+scoreboard objectives remove ps_remove
+
+# Shop Admin Override:
+team remove ps_admin
+
+#
+execute as @a run tellraw @s [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Player Shop", "color": "#FF2682"}, {"text": "]", "color": "white"}, {"text": " Uninstalled!", "color": "#A3A3A3"}]
+
+#
+datapack disable "file/mr_chibis_player_shops_v2"

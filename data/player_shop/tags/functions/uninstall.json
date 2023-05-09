@@ -1,6 +1,6 @@
 {
 	"values": [
-		"player_shop:scoreboards/uninstall",
-		"admin_shop:scoreboards/uninstall"
+		"admin_shop:scoreboards/uninstall",
+		"player_shop:scoreboards/uninstall"
 	]
 }

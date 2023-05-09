@@ -1,0 +1,4 @@
+execute as @s[nbt={Item:{id:"minecraft:prismarine"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:prismarine"}] run clear @s minecraft:prismarine 1
+execute as @s[nbt={Item:{id:"minecraft:prismarine_bricks"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:prismarine_bricks"}] run clear @s minecraft:prismarine_bricks 1
+execute as @s[nbt={Item:{id:"minecraft:dark_prismarine"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:dark_prismarine"}] run clear @s minecraft:dark_prismarine 1
+execute as @s[nbt={Item:{id:"minecraft:sea_lantern"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:sea_lantern"}] run clear @s minecraft:sea_lantern 1

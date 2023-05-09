@@ -1,15 +1,15 @@
-# Admin Enabled Commands:
-execute as @a at @s[team=ps_admin] run scoreboard players enable @s adminps_create
-execute as @a at @s[team=ps_admin] run scoreboard players enable @s adminps_remove
+###########################################################################################
+# Enable / Disable Command Functionallity:
+###########################################################################################
+execute as @a at @s run function admin_shop:scoreboards/commands/enable
+execute as @a at @s run function admin_shop:scoreboards/commands/disable
 
-# Admin Commands:
-execute as @a at @s[team=ps_admin,scores={adminps_create=1..}] run function admin_shop:commands/create_shop
-execute as @a at @s[team=ps_admin,scores={adminps_remove=1..}] run function admin_shop:commands/remove_shop
+###########################################################################################
+# Command Toggle Functionallity:
+###########################################################################################
+execute as @a at @s run function admin_shop:scoreboards/commands/toggle
 
-# Admin Init:
-execute as @e[type=minecraft:wandering_trader,tag=admin_shop] at @s if entity @a[distance=0..5] run function admin_shop:shop/gui_update
-execute as @e[type=minecraft:wandering_trader,tag=admin_shop] at @s if entity @a[distance=0..5] run function admin_shop:shop/nbt
-
-# Gamemode Functionallity:
-function admin_shop:security/gamemode
-function admin_shop:security/lock
+###########################################################################################
+# Admin Shop Functionallity:
+###########################################################################################
+execute as @e[type=minecraft:marker,tag=ps_shop,tag=ps_admin] at @s if entity @p[scores={ps_distance=0..2},distance=0..2] run function admin_shop:marker/unlimited

@@ -1,0 +1,3 @@
+execute as @s[nbt={Item:{id:"minecraft:red_mushroom_block"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:red_mushroom_block"}] run clear @s minecraft:red_mushroom_block 1
+execute as @s[nbt={Item:{id:"minecraft:brown_mushroom_block"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:brown_mushroom_block"}] run clear @s minecraft:brown_mushroom_block 1
+execute as @s[nbt={Item:{id:"minecraft:mushroom_stem"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:mushroom_stem"}] run clear @s minecraft:mushroom_stem 1

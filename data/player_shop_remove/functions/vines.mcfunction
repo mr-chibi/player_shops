@@ -1,0 +1,3 @@
+execute as @s[nbt={Item:{id:"minecraft:vine"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:vine"}] run clear @s minecraft:vine 1
+execute as @s[nbt={Item:{id:"minecraft:twisting_vines"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:twisting_vines"}] run clear @s minecraft:twisting_vines 1
+execute as @s[nbt={Item:{id:"minecraft:weeping_vines"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:weeping_vines"}] run clear @s minecraft:weeping_vines 1
