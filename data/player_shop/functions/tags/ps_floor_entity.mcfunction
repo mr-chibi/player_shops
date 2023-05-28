@@ -1,0 +1,2 @@
+# If player is spamming "right click" on a sign "remove" floor entities:
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:paper"}},tag=ps_buy] at @s if entity @e[type=minecraft:marker,tag=ps_shop,distance=0..5] run kill @s

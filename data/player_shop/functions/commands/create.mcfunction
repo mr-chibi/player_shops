@@ -15,29 +15,33 @@ tellraw @s[tag=!ps_refuse] [{"text": "[", "color": "white"}, {"text": "Mr_Chibi'
 ###########################################################################################
 # WEST
 execute as @s[tag=!ps_refuse,y_rotation=-135..-45] run setblock ~ ~ ~ minecraft:chest[facing=west]
-execute as @s[tag=!ps_refuse,y_rotation=-135..-45] run setblock ~-1 ~ ~ minecraft:spruce_wall_sign[facing=west]{Text2:"{\"selector\": \"@p\", \"color\": \"#FFFFFF\"}", Text3:"{\"text\": \"Shop\", \"color\": \"#FF2682\"}"}
+execute as @s[tag=!ps_refuse,y_rotation=-135..-45] run setblock ~ ~2 ~ minecraft:spruce_hanging_sign[rotation=4]{id:"minecraft:hanging_sign",is_waxed:1b,front_text:{color:"black",messages:["{\"selector\": \"@p\", \"color\": \"#FFFFFF\"}","{\"text\": \"Shop\",\"color\": \"#FF2682\"}","{\"text\": \"\"}","{\"text\": \"\"}"]}}
+execute as @s[tag=!ps_refuse,y_rotation=-135..-45] run setblock ~-1 ~ ~ minecraft:spruce_wall_sign[facing=west]{id:"minecraft:sign",is_waxed:1b,front_text:{color:"black",messages:["{\"text\": \"Right Click, Chest \", \"color\": \"white\"}","{\"text\": \"Then, Select 1-9 in chat\",\"color\": \"white\"}","{\"text\": \"[Right Click Sign]\", \"color\": \"green\"}","{\"text\": \"Purchase 1x\", \"color\": \"yellow\", \"clickEvent\":{\"action\": \"run_command\", \"value\": \"/trigger ps_buy\"}}"]}}
 execute as @s[tag=!ps_refuse,y_rotation=-135..-45] run tp @s ~-0.469 ~ ~
 
 # SOUTH
 execute as @s[tag=!ps_refuse,y_rotation=135..-135] run setblock ~ ~ ~ minecraft:chest[facing=south]
-execute as @s[tag=!ps_refuse,y_rotation=135..-135] run setblock ~ ~ ~1 minecraft:spruce_wall_sign[facing=south]{Text2:"{\"selector\": \"@p\", \"color\": \"#FFFFFF\"}", Text3:"{\"text\": \"Shop\", \"color\": \"#FF2682\"}"}
+execute as @s[tag=!ps_refuse,y_rotation=135..-135] run setblock ~ ~2 ~ minecraft:spruce_hanging_sign[rotation=0]{id:"minecraft:hanging_sign",is_waxed:1b,front_text:{color:"black",messages:["{\"selector\": \"@p\", \"color\": \"#FFFFFF\"}","{\"text\": \"Shop\",\"color\": \"#FF2682\"}","{\"text\": \"\"}","{\"text\": \"\"}"]}}
+execute as @s[tag=!ps_refuse,y_rotation=135..-135] run setblock ~ ~ ~1 minecraft:spruce_wall_sign[facing=south]{id:"minecraft:sign",is_waxed:1b,front_text:{color:"black",messages:["{\"text\": \"Right Click, Chest \", \"color\": \"white\"}","{\"text\": \"Then, Select 1-9 in chat\",\"color\": \"white\"}","{\"text\": \"[Right Click Sign]\", \"color\": \"green\"}","{\"text\": \"Purchase 1x\", \"color\": \"yellow\", \"clickEvent\":{\"action\": \"run_command\", \"value\": \"/trigger ps_buy\"}}"]}}
 execute as @s[tag=!ps_refuse,y_rotation=135..-135] run tp @s ~ ~ ~0.469
 
 # EAST
 execute as @s[tag=!ps_refuse,y_rotation=45..135] run setblock ~ ~ ~ minecraft:chest[facing=east]
-execute as @s[tag=!ps_refuse,y_rotation=45..135] run setblock ~1 ~ ~ minecraft:spruce_wall_sign[facing=east]{Text2:"{\"selector\": \"@p\", \"color\": \"#FFFFFF\"}", Text3:"{\"text\": \"Shop\", \"color\": \"#FF2682\"}"}
+execute as @s[tag=!ps_refuse,y_rotation=45..135] run setblock ~ ~2 ~ minecraft:spruce_hanging_sign[rotation=4]{id:"minecraft:hanging_sign",is_waxed:1b,back_text:{color:"black",messages:["{\"selector\": \"@p\", \"color\": \"#FFFFFF\"}","{\"text\": \"Shop\",\"color\": \"#FF2682\"}","{\"text\": \"\"}","{\"text\": \"\"}"]}}
+execute as @s[tag=!ps_refuse,y_rotation=45..135] run setblock ~1 ~ ~ minecraft:spruce_wall_sign[facing=east]{id:"minecraft:sign",is_waxed:1b,front_text:{color:"black",messages:["{\"text\": \"Right Click, Chest \", \"color\": \"white\"}","{\"text\": \"Then, Select 1-9 in chat\",\"color\": \"white\"}","{\"text\": \"[Right Click Sign]\", \"color\": \"green\"}","{\"text\": \"Purchase 1x\", \"color\": \"yellow\", \"clickEvent\":{\"action\": \"run_command\", \"value\": \"/trigger ps_buy\"}}"]}}
 execute as @s[tag=!ps_refuse,y_rotation=45..135] run tp @s ~0.469 ~ ~
 
 # NORTH
 execute as @s[tag=!ps_refuse,y_rotation=-45..45] run setblock ~ ~ ~ minecraft:chest[facing=north]
-execute as @s[tag=!ps_refuse,y_rotation=-45..45] run setblock ~ ~ ~-1 minecraft:spruce_wall_sign[facing=north]{Text2:"{\"selector\": \"@p\", \"color\": \"#FFFFFF\"}", Text3:"{\"text\": \"Shop\", \"color\": \"#FF2682\"}"}
+execute as @s[tag=!ps_refuse,y_rotation=-45..45] run setblock ~ ~2 ~ minecraft:spruce_hanging_sign[rotation=0]{id:"minecraft:hanging_sign",is_waxed:1b,back_text:{color:"black",messages:["{\"selector\": \"@p\", \"color\": \"#FFFFFF\"}","{\"text\": \"Shop\",\"color\": \"#FF2682\"}","{\"text\": \"\"}","{\"text\": \"\"}"]}}
+execute as @s[tag=!ps_refuse,y_rotation=-45..45] run setblock ~ ~ ~-1 minecraft:spruce_wall_sign[facing=north]{id:"minecraft:sign",is_waxed:1b,front_text:{color:"black",messages:["{\"text\": \"Right Click, Chest \", \"color\": \"white\"}","{\"text\": \"Then, Select 1-9 in chat\",\"color\": \"white\"}","{\"text\": \"[Right Click Sign]\", \"color\": \"green\"}","{\"text\": \"Purchase 1x\", \"color\": \"yellow\", \"clickEvent\":{\"action\": \"run_command\", \"value\": \"/trigger ps_buy\"}}"]}}
 execute as @s[tag=!ps_refuse,y_rotation=-45..45] run tp @s ~ ~ ~-0.469
 
 
 ###########################################################################################
 # Summon "Marker" as Shop NBT:
 ###########################################################################################
-execute as @s[tag=!ps_refuse] run summon minecraft:marker ~ ~ ~ {data:{ps_owner:"", ps_sell:[{}, {}, {}, {}, {}, {}, {}, {}, {}], ps_buy:[{}, {}, {}, {}, {}, {}, {}, {}, {}], ps_recieved:[{Slot:18b, id:"minecraft:air", Count:1b}, {Slot:19b, id:"minecraft:air", Count:1b}, {Slot:20b, id:"minecraft:air", Count:1b}, {Slot:21b, id:"minecraft:air", Count:1b}, {Slot:22b, id:"minecraft:air", Count:1b}, {Slot:23b, id:"minecraft:air", Count:1b}, {Slot:24b, id:"minecraft:air", Count:1b}, {Slot:25b, id:"minecraft:air", Count:1b}, {Slot:26b, id:"minecraft:air", Count:1b}], particles:"", ps_status:"lock"},Tags:["ps_shop"]}
+execute as @s[tag=!ps_refuse] run summon minecraft:marker ~ ~ ~ {data:{ps_owner:"", ps_sell:[{}, {}, {}, {}, {}, {}, {}, {}, {}], ps_buy:[{}, {}, {}, {}, {}, {}, {}, {}, {}], ps_recieved:[{Slot:18b, id:"minecraft:air", Count:1b}, {Slot:19b, id:"minecraft:air", Count:1b}, {Slot:20b, id:"minecraft:air", Count:1b}, {Slot:21b, id:"minecraft:air", Count:1b}, {Slot:22b, id:"minecraft:air", Count:1b}, {Slot:23b, id:"minecraft:air", Count:1b}, {Slot:24b, id:"minecraft:air", Count:1b}, {Slot:25b, id:"minecraft:air", Count:1b}, {Slot:26b, id:"minecraft:air", Count:1b}], particles:"", ps_status:"lock", ps_type:"limited"},Tags:["ps_shop"]}
 
 
 ###########################################################################################

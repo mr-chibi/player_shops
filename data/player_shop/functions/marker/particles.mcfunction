@@ -17,5 +17,5 @@ execute as @s[nbt={data:{ps_status:"lock",particles:"snowflake"}},distance=0..5]
 ###########################################################################################
 # Marker Shop Locked [Particle Effect]:
 ###########################################################################################
-execute as @s[nbt={data:{ps_status:"unlock"}}] if entity @p[scores={ps_distance=0..8},distance=0..8] run tp @s ~ ~ ~ ~-5 ~
-execute as @s[nbt={data:{ps_status:"unlock"}}] if entity @p[scores={ps_distance=0..8},distance=0..8] run particle minecraft:flame ^ ^ ^5 0.25 0.50 0.50 0 15
+execute as @s[nbt={data:{ps_status:"unlock"}}] if entity @a[scores={ps_distance=0..8},distance=0..8] run tp @s ~ ~ ~ ~-5 ~
+execute as @s[nbt={data:{ps_status:"unlock"}}] if entity @a[scores={ps_distance=0..8},distance=0..8] run particle minecraft:flame ^ ^ ^5 0.25 0.50 0.50 0 15

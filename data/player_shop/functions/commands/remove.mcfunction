@@ -13,16 +13,18 @@ execute if score @s ps_id = @e[type=minecraft:marker,tag=ps_shop,distance=0..2,l
 ###########################################################################################
 # Check If, "Marker" UUID[0] Matches, "Player's" UUID[0] Then, remove shop:
 ###########################################################################################
-execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3] ps_id run setblock ~ ~ ~ minecraft:air destroy
-execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3] ps_id run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:chest"}},distance=0..3,limit=1]
-execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3] ps_id run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_sign"}},distance=0..3,limit=1]
-execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3] ps_id run kill @s
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3,scores={ps_distance=0..3},tag=ps_owner] ps_id run setblock ~ ~ ~ minecraft:air destroy
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3,scores={ps_distance=0..3},tag=ps_owner] ps_id run setblock ~ ~2 ~ minecraft:air destroy
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3,scores={ps_distance=0..3},tag=ps_owner] ps_id run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:chest"}},distance=0..3,limit=1]
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3,scores={ps_distance=0..3},tag=ps_owner] ps_id run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_sign"}},distance=0..3,limit=1]
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3,scores={ps_distance=0..3},tag=ps_owner] ps_id run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_hanging_sign"}},distance=0..3,limit=1]
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..3,scores={ps_distance=0..3},tag=ps_owner] ps_id run kill @s
 
 
 ###########################################################################################
 # Reset Data:
 ###########################################################################################
-scoreboard players set @s ps_distance 9
+scoreboard players set @a[distance=0..9] ps_distance 9
 scoreboard players reset @s ps_view_pg
 scoreboard players reset @s ps_error
 tag @s remove ps_owner

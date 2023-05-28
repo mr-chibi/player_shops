@@ -1,7 +1,7 @@
 ###########################################################################################
 # Enable / Disable Command Functionallity:
 ###########################################################################################
-function player_shop:scoreboards/commands/enable
+execute as @a at @s run function player_shop:scoreboards/commands/enable
 execute as @a at @s run function player_shop:scoreboards/commands/disable
 
 
@@ -13,7 +13,7 @@ execute as @a at @s run function player_shop:scoreboards/commands/toggle
 ###########################################################################################
 # Marker Functionallity For Player Shop:
 ###########################################################################################
-execute as @e[type=minecraft:marker,tag=ps_shop] at @s if entity @p[distance=0..2,scores={ps_distance=0..2}] run function player_shop:marker/init
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if entity @a[distance=0..8,scores={ps_distance=0..8}] run function player_shop:marker/init
 execute as @a at @s run function player_shop:marker/distance
 execute as @a at @s run function player_shop:marker/greeting
 
@@ -23,6 +23,7 @@ execute as @a at @s run function player_shop:marker/greeting
 ###########################################################################################
 function player_shop:tags/ps_owner
 function player_shop:tags/ps_guest
+function player_shop:tags/ps_floor_entity
 
 
 ###########################################################################################
@@ -45,7 +46,6 @@ execute as @a at @s[scores={ps_unlock=1},team=!ps_admin] unless entity @e[type=m
 ###########################################################################################
 execute as @a at @s run function player_shop:preventions/gamemodes
 execute as @a at @s run function player_shop:preventions/maintenace
-
 
 ###########################################################################################
 # Player Shop [GUI Interaction]:

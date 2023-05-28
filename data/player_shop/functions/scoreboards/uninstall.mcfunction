@@ -63,7 +63,5 @@ scoreboard objectives remove ps_remove
 team remove ps_admin
 
 #
-execute as @a run tellraw @s [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Player Shop", "color": "#FF2682"}, {"text": "]", "color": "white"}, {"text": " Uninstalled!", "color": "#A3A3A3"}]
-
-#
-datapack disable "file/mr_chibis_player_shops_v2"
+execute as @a run tellraw @s [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Player Shop", "color": "#FF2682"}, {"text": "]", "color": "white"}, {"text": " Uninstalled Player Shop scoreboard & data!", "color": "#A3A3A3"}]
+execute as @a run tellraw @s [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Player Shop", "color": "#FF2682"}, {"text": "]", "color": "white"}, {"text": " Do: '/datapack disable [Pack]' \n to disable the rest.", "color": "green"}]

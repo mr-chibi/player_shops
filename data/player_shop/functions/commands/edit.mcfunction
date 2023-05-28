@@ -1,7 +1,7 @@
 ###########################################################################################
 # Shop Settings Message:
 ###########################################################################################
-execute as @e[type=minecraft:marker,tag=ps_shop] at @s if score @s ps_id = @p[distance=0..2] ps_id run function player_shop:commands/edit/particles_menu
+execute if score @s ps_id = @e[type=minecraft:marker,tag=ps_shop,sort=nearest,limit=1,distance=0..2] ps_id run function player_shop:commands/edit/particles_menu
 
 ###########################################################################################
 # Reset Command:

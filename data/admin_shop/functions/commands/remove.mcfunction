@@ -6,7 +6,8 @@ tellraw @s [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Player Shop", 
 ###########################################################################################
 # Shop "Forcefully" Remove players shop:
 ###########################################################################################
-execute as @e[type=minecraft:marker,tag=ps_shop] at @s if entity @p[scores={ps_distance=0..2},distance=0..2] run setblock ~ ~ ~ minecraft:air destroy
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if entity @p[scores={ps_distance=0..2},distance=0..2,team=ps_admin] run setblock ~ ~2 ~ minecraft:air destroy
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s if entity @p[scores={ps_distance=0..2},distance=0..2,team=ps_admin] run setblock ~ ~ ~ minecraft:air destroy
 kill @e[type=minecraft:marker,tag=ps_shop,distance=0..2,limit=1]
 
 ###########################################################################################
@@ -14,6 +15,7 @@ kill @e[type=minecraft:marker,tag=ps_shop,distance=0..2,limit=1]
 ###########################################################################################
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:chest"}},distance=0..3,limit=1]
 kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_sign"}},distance=0..3,limit=1]
+kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_hanging_sign"}},distance=0..3,limit=1]
 
 
 ###########################################################################################

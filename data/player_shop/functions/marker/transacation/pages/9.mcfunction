@@ -63,6 +63,7 @@ execute if score @s ps_error matches 0 run scoreboard players remove @s[scores={
 # Player Shop, [Buy Item], check if "player" 0-2 blocks Next, Update [Player's Shop Stock]:
 ######################################################################################################################################################################################
 execute if score @s ps_error matches 0 run function player_shop:marker/transacation/ps_recieved
+execute if score @s ps_error matches 0 if score @s ps_cart matches ..64 as @e[type=minecraft:item,tag=ps_buy] at @s if entity @p[distance=0..2,scores={ps_distance=0..2}] run function #player_shop:remove
 execute if score @s ps_error matches 0 if score @s ps_cart matches ..64 run function player_shop:marker/transacation/ps_sell
 execute if score @s ps_error matches 0 run function player_shop:marker/transacation/ps_buy
 
