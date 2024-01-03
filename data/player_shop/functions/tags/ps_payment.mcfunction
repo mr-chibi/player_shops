@@ -4,7 +4,7 @@
 function #player_shop:approve
 
 #
-# execute as @e[type=minecraft:marker,tag=ps_shop] at @s run tellraw @p[distance=0..2,tag=ps_cart] [{"text": "\n\n\nPlayer: "}, {"score":{"name": "@p", "objective": "ps_wallet"}}, {"text": " | Shop Counts: "}, {"score":{"name": "@s", "objective": "ps_stock_remainer"}}]
+execute as @e[type=minecraft:marker,tag=ps_shop] at @s run tellraw @p[distance=0..2,tag=ps_cart] [{"text": "\n\n\nPlayer: "}, {"score":{"name": "@p", "objective": "ps_wallet"}}, {"text": " | Shop Counts: "}, {"score":{"name": "@s", "objective": "ps_stock_remainer"}}]
 
 ###########################################################################################
 # Player Shop, Decline [Tag]:

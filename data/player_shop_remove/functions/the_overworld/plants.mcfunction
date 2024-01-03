@@ -1,4 +1,4 @@
-execute as @s[nbt={Item:{id:"minecraft:grass"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:grass"}] run clear @s minecraft:grass 1
+execute as @s[nbt={Item:{id:"minecraft:short_grass"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:short_grass"}] run clear @s minecraft:short_grass 1
 execute as @s[nbt={Item:{id:"minecraft:tall_grass"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:tall_grass"}] run clear @s minecraft:tall_grass 1
 execute as @s[nbt={Item:{id:"minecraft:fern"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:fern"}] run clear @s minecraft:fern 1
 execute as @s[nbt={Item:{id:"minecraft:large_fern"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:large_fern"}] run clear @s minecraft:large_fern 1

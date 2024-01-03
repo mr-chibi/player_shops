@@ -1,4 +1,4 @@
-execute as @s[nbt={Item:{id:"minecraft:glass_bottle"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:glass_bottle"}].Count
-execute as @s[nbt={Item:{id:"minecraft:potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:potion"}].Count
-execute as @s[nbt={Item:{id:"minecraft:splash_potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:splash_potion"}].Count
-execute as @s[nbt={Item:{id:"minecraft:lingering_potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:lingering_potion"}].Count
+execute as @s[nbt={Item:{id:"minecraft:glass_bottle"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:glass_bottle 0
+execute as @s[nbt={Item:{id:"minecraft:potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:potion 0
+execute as @s[nbt={Item:{id:"minecraft:splash_potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:splash_potion 0
+execute as @s[nbt={Item:{id:"minecraft:lingering_potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:lingering_potion 0

@@ -1,7 +1,7 @@
-execute as @s[nbt={Item:{id:"minecraft:conduit"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:conduit"}].Count
-execute as @s[nbt={Item:{id:"minecraft:tnt"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:tnt"}].Count
-execute as @s[nbt={Item:{id:"minecraft:tnt_minecart"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:tnt_minecart"}].Count
-execute as @s[nbt={Item:{id:"minecraft:end_crystal"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:end_crystal"}].Count
-execute as @s[nbt={Item:{id:"minecraft:ender_eye"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:ender_eye"}].Count
-execute as @s[nbt={Item:{id:"minecraft:flint_and_steel"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:flint_and_steel"}].Count
-execute as @s[nbt={Item:{id:"minecraft:quartz"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run data get entity @p Inventory[{id:"minecraft:quartz"}].Count
+execute as @s[nbt={Item:{id:"minecraft:conduit"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:conduit 0
+execute as @s[nbt={Item:{id:"minecraft:tnt"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:tnt 0
+execute as @s[nbt={Item:{id:"minecraft:tnt_minecart"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:tnt_minecart 0
+execute as @s[nbt={Item:{id:"minecraft:end_crystal"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:end_crystal 0
+execute as @s[nbt={Item:{id:"minecraft:ender_eye"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:ender_eye 0
+execute as @s[nbt={Item:{id:"minecraft:flint_and_steel"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:flint_and_steel 0
+execute as @s[nbt={Item:{id:"minecraft:quartz"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:quartz 0
