@@ -1,7 +1,0 @@
-execute as @s[nbt={Item:{id:"minecraft:wither_skeleton_skull"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:wither_skeleton_skull 0
-execute as @s[nbt={Item:{id:"minecraft:skeleton_skull"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:skeleton_skull 0
-execute as @s[nbt={Item:{id:"minecraft:player_head"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:player_head 0
-execute as @s[nbt={Item:{id:"minecraft:zombie_head"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:zombie_head 0
-execute as @s[nbt={Item:{id:"minecraft:creeper_head"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:creeper_head 0
-execute as @s[nbt={Item:{id:"minecraft:dragon_head"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:dragon_head 0
-execute as @s[nbt={Item:{id:"minecraft:piglin_head"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id store result score @p ps_wallet run clear @p minecraft:piglin_head 0

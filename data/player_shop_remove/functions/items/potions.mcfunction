@@ -1,4 +1,0 @@
-execute as @s[nbt={Item:{id:"minecraft:glass_bottle"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:glass_bottle"}] run clear @s minecraft:glass_bottle 1
-execute as @s[nbt={Item:{id:"minecraft:potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:potion"}] run clear @s minecraft:potion 1
-execute as @s[nbt={Item:{id:"minecraft:splash_potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:splash_potion"}] run clear @s minecraft:splash_potion 1
-execute as @s[nbt={Item:{id:"minecraft:lingering_potion"}}] at @s if score @s ps_id = @p[distance=0..2,scores={ps_distance=0..2}] ps_id as @p at @s if data entity @s Inventory[{id:"minecraft:lingering_potion"}] run clear @s minecraft:lingering_potion 1

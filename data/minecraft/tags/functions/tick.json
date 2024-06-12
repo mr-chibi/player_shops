@@ -1,6 +1,5 @@
 {
 	"values": [
-		"player_shop:init",
-		"admin_shop:init"
+		"mcs_shops:init"
 	]
 }

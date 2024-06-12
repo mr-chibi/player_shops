@@ -1,0 +1,14 @@
+# Admin [Commands]:
+scoreboard objectives remove mcs_unlimited
+scoreboard objectives remove mcs_limited
+
+# Admin Shop [Data]:
+scoreboard objectives remove mcs_sell_orginal_slot_0
+scoreboard objectives remove mcs_sell_orginal_slot_1
+scoreboard objectives remove mcs_sell_orginal_slot_2
+scoreboard objectives remove mcs_sell_orginal_slot_3
+scoreboard objectives remove mcs_sell_orginal_slot_4
+scoreboard objectives remove mcs_sell_orginal_slot_5
+scoreboard objectives remove mcs_sell_orginal_slot_6
+scoreboard objectives remove mcs_sell_orginal_slot_7
+scoreboard objectives remove mcs_sell_orginal_slot_8
