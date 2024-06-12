@@ -1,7 +1,11 @@
 # Mr_Chibi's Player Shops
 Allows players to create shops, Interact with shops [Sell] or [Buy], Collect Payments & interact with their community!
 
-## What features does it offer?
+## What types of servers is compatible with?
+* Pure Vanilla Servers
+* Spigot / Paper
+
+### What features does it offer?
 * It’s Singleplayer & Multiplayer Friendly!
 * Shops Contain "9" Slots for players to shop and browse compared to "1"!
 * Shops are linked to Players.
