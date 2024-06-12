@@ -40,5 +40,5 @@ Example, below is a list of **Admin Commands**:
 ###  Player Shop Purchasing:
 > Commands <b>"Shop Guests"</b> can use while in 0-5 block distance.
 <ul>
-<li><b>/trigger mcs_buy set [amount]</b> - Allows player buy in amounts.</li>
+<li><b>/trigger mcs_buy set [amount]</b> - Player must Right click "chest" then, click in chat the [gui] button or /trigger mcs_buy set [amount].</li>
 </ul>
