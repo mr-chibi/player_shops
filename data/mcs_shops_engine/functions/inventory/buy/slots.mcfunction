@@ -10,17 +10,6 @@ execute unless block ~ ~ ~ chest{Items:[{Slot:16b}]} run data modify entity @s d
 execute unless block ~ ~ ~ chest{Items:[{Slot:17b}]} run data modify entity @s data.shop_buy[8].Items set value {}
 
 # Insert Data [Id/Counts/Slots/Components]:
-execute if block ~ ~ ~ chest{Items:[{Slot:9b}]} run data modify entity @s data.shop_buy[0].components set from block ~ ~ ~ Items[{Slot:9b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:10b}]} run data modify entity @s data.shop_buy[1].components set from block ~ ~ ~ Items[{Slot:10b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:11b}]} run data modify entity @s data.shop_buy[2].components set from block ~ ~ ~ Items[{Slot:11b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:12b}]} run data modify entity @s data.shop_buy[3].components set from block ~ ~ ~ Items[{Slot:12b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:13b}]} run data modify entity @s data.shop_buy[4].components set from block ~ ~ ~ Items[{Slot:13b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:14b}]} run data modify entity @s data.shop_buy[5].components set from block ~ ~ ~ Items[{Slot:14b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:15b}]} run data modify entity @s data.shop_buy[6].components set from block ~ ~ ~ Items[{Slot:15b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:16b}]} run data modify entity @s data.shop_buy[7].components set from block ~ ~ ~ Items[{Slot:16b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:17b}]} run data modify entity @s data.shop_buy[8].components set from block ~ ~ ~ Items[{Slot:17b}].components
-
-#
 execute if block ~ ~ ~ chest{Items:[{Slot:9b}]} run data modify entity @s data.shop_buy[0].count set from block ~ ~ ~ Items[{Slot:9b}].count
 execute if block ~ ~ ~ chest{Items:[{Slot:10b}]} run data modify entity @s data.shop_buy[1].count set from block ~ ~ ~ Items[{Slot:10b}].count
 execute if block ~ ~ ~ chest{Items:[{Slot:11b}]} run data modify entity @s data.shop_buy[2].count set from block ~ ~ ~ Items[{Slot:11b}].count

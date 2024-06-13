@@ -61,5 +61,6 @@ scoreboard objectives remove mcs_edit
 scoreboard objectives remove mcs_remove
 
 # Shop Related [Effects, Closing/Opening, Etc] Commands:
+scoreboard objectives remove mcs_particles
 scoreboard objectives remove mcs_open
 scoreboard objectives remove mcs_close

@@ -62,5 +62,6 @@ scoreboard objectives add mcs_create trigger
 scoreboard objectives add mcs_remove trigger
 
 # Shop Related [Effects, Closing/Opening, Etc] Commands:
+scoreboard objectives add mcs_particles trigger
 scoreboard objectives add mcs_open trigger
 scoreboard objectives add mcs_close trigger

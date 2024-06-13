@@ -9,18 +9,7 @@ execute unless block ~ ~ ~ chest{Items:[{Slot:6b}]} run data modify entity @s da
 execute unless block ~ ~ ~ chest{Items:[{Slot:7b}]} run data modify entity @s data.shop_sell[7].Items set value {}
 execute unless block ~ ~ ~ chest{Items:[{Slot:8b}]} run data modify entity @s data.shop_sell[8].Items set value {}
 
-# Insert Data [Id/Counts/Slots/Components]:
-execute if block ~ ~ ~ chest{Items:[{Slot:0b}]} run data modify entity @s data.shop_sell[0].components set from block ~ ~ ~ Items[{Slot:0b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:1b}]} run data modify entity @s data.shop_sell[1].components set from block ~ ~ ~ Items[{Slot:1b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:2b}]} run data modify entity @s data.shop_sell[2].components set from block ~ ~ ~ Items[{Slot:2b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:3b}]} run data modify entity @s data.shop_sell[3].components set from block ~ ~ ~ Items[{Slot:3b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:4b}]} run data modify entity @s data.shop_sell[4].components set from block ~ ~ ~ Items[{Slot:4b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:5b}]} run data modify entity @s data.shop_sell[5].components set from block ~ ~ ~ Items[{Slot:5b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:6b}]} run data modify entity @s data.shop_sell[6].components set from block ~ ~ ~ Items[{Slot:6b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:7b}]} run data modify entity @s data.shop_sell[7].components set from block ~ ~ ~ Items[{Slot:7b}].components
-execute if block ~ ~ ~ chest{Items:[{Slot:8b}]} run data modify entity @s data.shop_sell[8].components set from block ~ ~ ~ Items[{Slot:8b}].components
-
-#
+# Insert Data [Id/count/Slots]:
 execute if block ~ ~ ~ chest{Items:[{Slot:0b}]} run data modify entity @s data.shop_sell[0].count set from block ~ ~ ~ Items[{Slot:0b}].count
 execute if block ~ ~ ~ chest{Items:[{Slot:1b}]} run data modify entity @s data.shop_sell[1].count set from block ~ ~ ~ Items[{Slot:1b}].count
 execute if block ~ ~ ~ chest{Items:[{Slot:2b}]} run data modify entity @s data.shop_sell[2].count set from block ~ ~ ~ Items[{Slot:2b}].count
