@@ -65,3 +65,6 @@ scoreboard objectives add mcs_remove trigger
 scoreboard objectives add mcs_particles trigger
 scoreboard objectives add mcs_open trigger
 scoreboard objectives add mcs_close trigger
+
+# Admin Particles [Override]:
+scoreboard players add shop_particles mcs_particles 0

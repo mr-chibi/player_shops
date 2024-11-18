@@ -1,5 +1,5 @@
 #
-data modify block ~ ~ ~ Lock set value "123"
+data modify block ~ ~ ~ lock set value {components:{"minecraft:custom_name": '"123"'}}
 
 #
 data modify entity @s data.shop_status set value "open"
