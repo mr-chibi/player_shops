@@ -1,7 +1,7 @@
 {
 	"pack": {
-		"pack_format": 48,
+		"pack_format": 57,
 		"description": "Created by Mr_Chibi, Bug Testing Help By, 'fluffykitty99', 'oldmantimer'",
-		"supported_formats": {"min_inclusive": 26, "max_inclusive": 48}
+		"supported_formats": {"min_inclusive": 26, "max_inclusive": 57}
 	}
 }
