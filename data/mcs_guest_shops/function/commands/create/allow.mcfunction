@@ -18,10 +18,10 @@ execute as @s[y_rotation=-45..45] align xyz run setblock ~ ~ ~-1 minecraft:oak_w
 execute as @s[y_rotation=45..135] align xyz run setblock ~1 ~ ~ minecraft:oak_wall_sign[facing=east]
 
 # Player Shop Sign Modify
-execute as @s[y_rotation=135..-135] align xyz run data modify block ~ ~ ~1 front_text.messages[1] set value "{\"selector\": \"@p\"}"
-execute as @s[y_rotation=-135..-45] align xyz run data modify block ~-1 ~ ~ front_text.messages[1] set value "{\"selector\": \"@p\"}"
-execute as @s[y_rotation=-45..45] align xyz run data modify block ~ ~ ~-1 front_text.messages[1] set value "{\"selector\": \"@p\"}"
-execute as @s[y_rotation=45..135] align xyz run data modify block ~1 ~ ~ front_text.messages[1] set value "{\"selector\": \"@p\"}"
+execute as @s[y_rotation=135..-135] align xyz run data modify block ~ ~ ~1 front_text.messages[1] set value {"selector": "@p"}
+execute as @s[y_rotation=-135..-45] align xyz run data modify block ~-1 ~ ~ front_text.messages[1] set value {"selector": "@p"}
+execute as @s[y_rotation=-45..45] align xyz run data modify block ~ ~ ~-1 front_text.messages[1] set value {"selector": "@p"}
+execute as @s[y_rotation=45..135] align xyz run data modify block ~1 ~ ~ front_text.messages[1] set value {"selector": "@p"}
 
 ######################################################
 # Scoreboard Driven:

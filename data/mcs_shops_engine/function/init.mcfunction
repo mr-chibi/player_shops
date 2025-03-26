@@ -29,6 +29,5 @@ execute if score @s mcs_chest_interaction matches 1.. if entity @e[type=minecraf
 # Chests [Interactions/Pages] "Closed":
 execute if score @s mcs_chest_interaction matches 1.. if entity @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_shops,nbt={data:{"shop_status":"closed"}},limit=1] run scoreboard players set @s mcs_chest_interaction 0
 
-
 # Admin Shop [Unlimited]:
 execute as @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_shops,tag=mcs_unlimited,limit=1] at @s run function mcs_admin_shops:tags/unlimited
