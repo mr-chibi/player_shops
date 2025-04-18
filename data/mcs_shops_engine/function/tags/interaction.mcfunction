@@ -15,5 +15,6 @@ tellraw @s [{"text":"[Previous]","color":"yellow","click_event":{"action":"run_c
 
 # Reset Command:
 scoreboard players set @s[scores={mcs_chest_interaction=1..}] mcs_chest_interaction 0
+scoreboard players set @s[scores={mcs_chest_shift=1..}] mcs_chest_shift 0
 scoreboard players set @s[scores={mcs_pages_prev=1..}] mcs_pages_prev 0
 scoreboard players set @s[scores={mcs_pages_next=1..}] mcs_pages_next 0

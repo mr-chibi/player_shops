@@ -1,3 +1,8 @@
+# force [Paper / Spigot]
+scoreboard players add @s[scores={mcs_pages_prev=1..}] mcs_chest_interaction 1
+scoreboard players add @s[scores={mcs_pages_next=1..}] mcs_chest_interaction 1
+scoreboard players add @s[scores={mcs_chest_shift=4..}] mcs_chest_interaction 1
+
 # Increment [--Pages | Pages++]
 execute if score @s[scores={mcs_pages_prev=1..}] mcs_pages > min_pages mcs_pages run scoreboard players remove @s mcs_pages 1
 execute if score @s[scores={mcs_pages_next=1..}] mcs_pages < max_pages mcs_pages run scoreboard players add @s mcs_pages 1

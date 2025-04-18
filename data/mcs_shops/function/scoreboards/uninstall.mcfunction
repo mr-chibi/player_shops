@@ -12,6 +12,7 @@ scoreboard objectives remove mcs_payments
 
 # Player's Interaction [Data]:
 scoreboard objectives remove mcs_chest_interaction
+scoreboard objectives remove mcs_chest_shift
 
 # Shop [Buy]
 scoreboard objectives remove mcs_buy
