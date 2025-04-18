@@ -12,7 +12,7 @@ scoreboard objectives add mcs_payments dummy
 
 # Player's Interaction [Data]:
 scoreboard objectives add mcs_chest_interaction minecraft.custom:minecraft.open_chest
-scoreboard objectives add mcs_chest_shift minecraft.custom:minecraft.crouch_one_cm
+scoreboard objectives add mcs_chest_shift minecraft.custom:minecraft.sneak_time
 
 # Shop [Buy]
 scoreboard objectives add mcs_buy trigger
