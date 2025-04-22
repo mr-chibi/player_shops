@@ -1,7 +1,9 @@
 # force [Paper / Spigot]
 scoreboard players add @s[scores={mcs_pages_prev=1..}] mcs_chest_interaction 1
 scoreboard players add @s[scores={mcs_pages_next=1..}] mcs_chest_interaction 1
-scoreboard players add @s[scores={mcs_chest_shift=4..}] mcs_chest_interaction 1
+scoreboard players add @s[scores={mcs_chest_shift=10..}] mcs_chest_interaction 1
+scoreboard players set @s[scores={mcs_chest_shift=10..}] mcs_chest_shift 0
+execute unless entity @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_shops,limit=1] run scoreboard players set @s[scores={mcs_chest_interaction=1..}] mcs_chest_interaction 0
 
 # Increment [--Pages | Pages++]
 execute if score @s[scores={mcs_pages_prev=1..}] mcs_pages > min_pages mcs_pages run scoreboard players remove @s mcs_pages 1
