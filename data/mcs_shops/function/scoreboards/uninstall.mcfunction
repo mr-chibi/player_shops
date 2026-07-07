@@ -1,67 +1,42 @@
-# Admin Permissions:
-team remove mcs_admin
+#
+team remove mcs_shop
+scoreboard objectives remove mcs_unlimited
+scoreboard objectives remove mcs_limited
 
-# Preventions [Shop]:
-scoreboard objectives remove mcs_distance
-
-# Player's Related [Data]:
+# Unquie Id's per player:
 scoreboard objectives remove mcs_ids
-scoreboard objectives remove mcs_wallet
-scoreboard objectives remove mcs_total
-scoreboard objectives remove mcs_payments
+scoreboard objectives remove mcs_interaction
+scoreboard objectives remove mcs_lclick
+scoreboard objectives remove mcs_rclick
 
-# Player's Interaction [Data]:
-scoreboard objectives remove mcs_chest_interaction
-scoreboard objectives remove mcs_chest_shift
-
-# Shop [Buy]
-scoreboard objectives remove mcs_buy
-
-# Shop Sell [Slots]:
-scoreboard objectives remove mcs_sell_slot_0
-scoreboard objectives remove mcs_sell_slot_1
-scoreboard objectives remove mcs_sell_slot_2
-scoreboard objectives remove mcs_sell_slot_3
-scoreboard objectives remove mcs_sell_slot_4
-scoreboard objectives remove mcs_sell_slot_5
-scoreboard objectives remove mcs_sell_slot_6
-scoreboard objectives remove mcs_sell_slot_7
-scoreboard objectives remove mcs_sell_slot_8
-
-# Shop Buy [Slots]:
-scoreboard objectives remove mcs_buy_slot_0
-scoreboard objectives remove mcs_buy_slot_1
-scoreboard objectives remove mcs_buy_slot_2
-scoreboard objectives remove mcs_buy_slot_3
-scoreboard objectives remove mcs_buy_slot_4
-scoreboard objectives remove mcs_buy_slot_5
-scoreboard objectives remove mcs_buy_slot_6
-scoreboard objectives remove mcs_buy_slot_7
-scoreboard objectives remove mcs_buy_slot_8
-
-# Shop Buy [Slots]:
-scoreboard objectives remove mcs_payments_slot_0
-scoreboard objectives remove mcs_payments_slot_1
-scoreboard objectives remove mcs_payments_slot_2
-scoreboard objectives remove mcs_payments_slot_3
-scoreboard objectives remove mcs_payments_slot_4
-scoreboard objectives remove mcs_payments_slot_5
-scoreboard objectives remove mcs_payments_slot_6
-scoreboard objectives remove mcs_payments_slot_7
-scoreboard objectives remove mcs_payments_slot_8
-
-# Player's Interaction [GUI Pages]:
-scoreboard objectives remove mcs_pages
-scoreboard objectives remove mcs_pages_next
-scoreboard objectives remove mcs_pages_prev
-
-# Shop [Create/Edit/Remove] (Database Commands):
-scoreboard objectives remove mcs_help
+# Commands:
 scoreboard objectives remove mcs_create
-scoreboard objectives remove mcs_edit
 scoreboard objectives remove mcs_remove
-
-# Shop Related [Effects, Closing/Opening, Etc] Commands:
-scoreboard objectives remove mcs_particles
 scoreboard objectives remove mcs_open
 scoreboard objectives remove mcs_close
+
+# Purchase Commands:
+scoreboard objectives remove mcs_buy
+scoreboard objectives remove mcs_amount
+
+#
+scoreboard objectives remove mcs_slot_0
+scoreboard objectives remove mcs_slot_1
+scoreboard objectives remove mcs_slot_2
+scoreboard objectives remove mcs_slot_3
+scoreboard objectives remove mcs_slot_4
+scoreboard objectives remove mcs_slot_5
+scoreboard objectives remove mcs_slot_6
+scoreboard objectives remove mcs_slot_7
+scoreboard objectives remove mcs_slot_8
+
+#
+scoreboard objectives remove mcs_payment_0
+scoreboard objectives remove mcs_payment_1
+scoreboard objectives remove mcs_payment_2
+scoreboard objectives remove mcs_payment_3
+scoreboard objectives remove mcs_payment_4
+scoreboard objectives remove mcs_payment_5
+scoreboard objectives remove mcs_payment_6
+scoreboard objectives remove mcs_payment_7
+scoreboard objectives remove mcs_payment_8

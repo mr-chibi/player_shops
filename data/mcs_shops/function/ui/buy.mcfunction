@@ -1,0 +1,1 @@
+$tellraw @s [{"text": "Buying: ", "color": "aqua"}, {"text": "$(id)", "color":"#cccccc"}, {"text": ", (", "color":"white"}, {"text": "$(Count)", "color":"aqua"}, {"text": ")", "color":"white"}]

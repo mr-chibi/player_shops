@@ -1,0 +1,8 @@
+{
+	"values": [
+		"mcs_shops:interaction/id",
+		"mcs_shops:interaction/l_click",
+		"mcs_shops:interaction/r_click",
+		"mcs_shops:interaction/status"
+	]
+}

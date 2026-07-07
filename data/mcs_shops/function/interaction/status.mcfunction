@@ -1,0 +1,9 @@
+# Shop Greeting: [Open/Closed]
+execute as @e[type=minecraft:interaction,distance=0..5,sort=nearest,tag=mcs_shop,nbt={data:{"status":"open"}}] at @s run title @a[distance=0..5] actionbar [{"text": "Shop: ", "color": "white"}, {"entity": "@s", "nbt": "data.shop_owner", "interpret":true, "color": "green"}, {"text": "'s", "color": "green"}, {"text": " | ", "color": "white"}, {"text": "Status: ", "color": "white", "bold":false}, {"text": "Open", "color": "green"}]
+execute as @e[type=minecraft:interaction,distance=0..5,sort=nearest,tag=mcs_shop,nbt={data:{"status":"closed"}}] at @s run title @a[distance=0..5] actionbar [{"text": "Shop: ", "color": "white"}, {"entity": "@s", "nbt": "data.shop_owner", "interpret":true, "color": "green"}, {"text": "'s", "color": "green"}, {"text": " | ", "color": "white"}, {"text": "Status: ", "color": "white", "bold":false}, {"text": "Closed", "color": "red"}]
+
+# Prventions TP:
+execute unless score @s[y_rotation=135..-135] mcs_ids = @e[type=minecraft:interaction,distance=0..5,tag=mcs_shop,nbt={data:{"status":"closed"}},limit=1] mcs_ids run tp @s[team=!mcs_admin] ~ ~ ~5
+execute unless score @s[y_rotation=-135..-45] mcs_ids = @e[type=minecraft:interaction,distance=0..5,tag=mcs_shop,nbt={data:{"status":"closed"}},limit=1] mcs_ids run tp @s[team=!mcs_admin] ~-5 ~ ~
+execute unless score @s[y_rotation=-45..45] mcs_ids = @e[type=minecraft:interaction,distance=0..5,tag=mcs_shop,nbt={data:{"status":"closed"}},limit=1] mcs_ids run tp @s[team=!mcs_admin] ~ ~ ~-5
+execute unless score @s[y_rotation=45..135] mcs_ids = @e[type=minecraft:interaction,distance=0..5,tag=mcs_shop,nbt={data:{"status":"closed"}},limit=1] mcs_ids run tp @s[team=!mcs_admin] ~5 ~ ~

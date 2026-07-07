@@ -1,6 +1,5 @@
 {
 	"values": [
-		"mcs_shops:scoreboards/install",
-		"mcs_admin_shops:scoreboards/install"
+		"mcs_shops:scoreboards/install"
 	]
 }

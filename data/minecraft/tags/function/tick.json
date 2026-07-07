@@ -1,5 +1,6 @@
 {
 	"values": [
-		"mcs_shops:init"
+		"mcs_shops:init",
+		"mcs_engine:init"
 	]
 }

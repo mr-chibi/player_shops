@@ -1,71 +1,57 @@
-# Admin Permissions:
-team add mcs_admin
+# Admin Commands:
+team add mcs_shop
+team modify mcs_shop prefix [{"text": "[","color": "white"},{"text": "MC's Shops Admin","color":"light_purple"},{"text":"] ","color":"white"}]
+team modify mcs_shop color gray
 
-# Preventions [Shop]:
-scoreboard objectives add mcs_distance dummy
+#
+scoreboard objectives add mcs_unlimited trigger
+scoreboard objectives add mcs_limited trigger
 
-# Player's Related [Data]:
+# Unquie Id's per player:
 scoreboard objectives add mcs_ids dummy
-scoreboard objectives add mcs_wallet dummy
-scoreboard objectives add mcs_total dummy
-scoreboard objectives add mcs_payments dummy
+scoreboard objectives add mcs_interaction dummy
+scoreboard objectives add mcs_lclick dummy
+scoreboard objectives add mcs_rclick dummy
 
-# Player's Interaction [Data]:
-scoreboard objectives add mcs_chest_interaction minecraft.custom:minecraft.open_chest
-scoreboard objectives add mcs_chest_shift minecraft.custom:minecraft.sneak_time
-
-# Shop [Buy]
-scoreboard objectives add mcs_buy trigger
-
-# Shop Sell [Slots]:
-scoreboard objectives add mcs_sell_slot_0 dummy
-scoreboard objectives add mcs_sell_slot_1 dummy
-scoreboard objectives add mcs_sell_slot_2 dummy
-scoreboard objectives add mcs_sell_slot_3 dummy
-scoreboard objectives add mcs_sell_slot_4 dummy
-scoreboard objectives add mcs_sell_slot_5 dummy
-scoreboard objectives add mcs_sell_slot_6 dummy
-scoreboard objectives add mcs_sell_slot_7 dummy
-scoreboard objectives add mcs_sell_slot_8 dummy
-
-# Shop Buy [Slots]:
-scoreboard objectives add mcs_buy_slot_0 dummy
-scoreboard objectives add mcs_buy_slot_1 dummy
-scoreboard objectives add mcs_buy_slot_2 dummy
-scoreboard objectives add mcs_buy_slot_3 dummy
-scoreboard objectives add mcs_buy_slot_4 dummy
-scoreboard objectives add mcs_buy_slot_5 dummy
-scoreboard objectives add mcs_buy_slot_6 dummy
-scoreboard objectives add mcs_buy_slot_7 dummy
-scoreboard objectives add mcs_buy_slot_8 dummy
-
-# Shop Buy [Slots]:
-scoreboard objectives add mcs_payments_slot_0 dummy
-scoreboard objectives add mcs_payments_slot_1 dummy
-scoreboard objectives add mcs_payments_slot_2 dummy
-scoreboard objectives add mcs_payments_slot_3 dummy
-scoreboard objectives add mcs_payments_slot_4 dummy
-scoreboard objectives add mcs_payments_slot_5 dummy
-scoreboard objectives add mcs_payments_slot_6 dummy
-scoreboard objectives add mcs_payments_slot_7 dummy
-scoreboard objectives add mcs_payments_slot_8 dummy
-
-# Player's Interaction [GUI Pages]:
-scoreboard objectives add mcs_pages dummy
-scoreboard objectives add mcs_pages_next trigger
-scoreboard objectives add mcs_pages_prev trigger
-scoreboard players set min_pages mcs_pages -1
-scoreboard players set max_pages mcs_pages 9
-
-# Shop [Create/Edit/Remove] (Database Commands):
-scoreboard objectives add mcs_help trigger
+# Commands:
 scoreboard objectives add mcs_create trigger
 scoreboard objectives add mcs_remove trigger
-
-# Shop Related [Effects, Closing/Opening, Etc] Commands:
-scoreboard objectives add mcs_particles trigger
 scoreboard objectives add mcs_open trigger
 scoreboard objectives add mcs_close trigger
 
-# Admin Particles [Override]:
-scoreboard players add shop_particles mcs_particles 0
+# Purchase Commands:
+scoreboard objectives add mcs_buy trigger
+scoreboard objectives add mcs_amount dummy
+
+#
+scoreboard objectives add mcs_slot_0 dummy
+scoreboard objectives add mcs_slot_1 dummy
+scoreboard objectives add mcs_slot_2 dummy
+scoreboard objectives add mcs_slot_3 dummy
+scoreboard objectives add mcs_slot_4 dummy
+scoreboard objectives add mcs_slot_5 dummy
+scoreboard objectives add mcs_slot_6 dummy
+scoreboard objectives add mcs_slot_7 dummy
+scoreboard objectives add mcs_slot_8 dummy
+
+#
+scoreboard objectives add mcs_payment_0 dummy
+scoreboard objectives add mcs_payment_1 dummy
+scoreboard objectives add mcs_payment_2 dummy
+scoreboard objectives add mcs_payment_3 dummy
+scoreboard objectives add mcs_payment_4 dummy
+scoreboard objectives add mcs_payment_5 dummy
+scoreboard objectives add mcs_payment_6 dummy
+scoreboard objectives add mcs_payment_7 dummy
+scoreboard objectives add mcs_payment_8 dummy
+
+#
+scoreboard objectives add mcs_limited_0 dummy
+scoreboard objectives add mcs_limited_1 dummy
+scoreboard objectives add mcs_limited_2 dummy
+scoreboard objectives add mcs_limited_3 dummy
+scoreboard objectives add mcs_limited_4 dummy
+scoreboard objectives add mcs_limited_5 dummy
+scoreboard objectives add mcs_limited_6 dummy
+scoreboard objectives add mcs_limited_7 dummy
+scoreboard objectives add mcs_limited_8 dummy
